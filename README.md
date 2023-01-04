@@ -1,5 +1,5 @@
-This website is developed by Michael Niemeyer (forked from m-niemeyer/m-niemeyer.github.io)
-The original readme is appended below
+This website is developed by Michael Niemeyer (forked from m-niemeyer/m-niemeyer.github.io). 
+The original readme is appended below:
 #
 
 # Personal Website
