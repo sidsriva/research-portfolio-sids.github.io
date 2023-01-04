@@ -1,3 +1,9 @@
+This website is developed by Michael Niemeyer (forked from m-niemeyer/m-niemeyer.github.io)
+The original readme is appended below: 
+
+######################################################
+######################################################
+
 # Personal Website
 
 This repository contains the python script to generate [my homepage](https://m-niemeyer.github.io/). It is very easy to adapt to your needs, and easy to maintain as the papers are crawled automatically from `publication_list.bib` and the talks from `talk_list.bib`.
