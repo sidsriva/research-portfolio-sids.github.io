@@ -1,40 +1,46 @@
 from pybtex.database.input import bibtex
 
 def get_personal_data():
-    name = ["Michael", "Niemeyer"]
-    email = "micniemeyer1@gmail.com"
+    name = ["Sid", "Srivastava"]
+    email = "sidsriva@umich.edu"
     twitter = "Mi_Niemeyer"
     github = "m-niemeyer"
     linkedin = "michael-niemeyer"
     bio_text = f"""
-                <p>I am a research scientist at Google working on 3D computer vision and graphics.</p>
-                <!-- <p>
-                    <span style="font-weight: bold;">Research:</span>
-                    I am excited about complex problems that can be tackled with learning-based systems. Currently, my research focuses on 3D vision, and I am interested in how machines can infer 3D representations from sparse observations. Further, I am big fan of neural scene representations, \ie, how scenes are best represented in learning-based systems using deep neural networks. 
-                </p> -->
                 <p>
-                    <span style="font-weight: bold;">Bio:</span> 
-                    I was a PhD student at the <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/home/" target="_blank">Max Planck Insitute for Intelligent Systems</a> supervised by <a href="https://www.cvlibs.net/" target="_blank">Andreas Geiger</a>.
-                    During my PhD studies, I joined <a href="https://research.google/teams/brain/">Google Brain</a> for an internship and subsequently as a student researcher.
-                    As an undergraduate student, I received a BSc in Mathematics from the <a href="http://www.mi.uni-koeln.de/main/index.en.php" target="_blank">University of Cologne (Germany)</a> and a MSc from the 
-                    <!-- During my Bachelor studies, I spent one year at the <a href="https://www.ub.edu/web/portal/en/" target="_blank">University of Barcelona</a>, Spain, funded by the ERASMUS program. -->
-                    <!-- Following my interest in computer science, I then moved to Scotland to gain my Master's degree in Advanced Computer Science at the  -->
-                    <a href="https://www.st-andrews.ac.uk/computer-science/" target="_blank">University of St Andrews (UK)</a>.
-                    <!-- In October 2018, I started my PhD in computer vision / machine learning in the <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/home/" target="_blank">AVG group</a> at the <a href ="https://is.mpg.de/" target="_blank">Max Planck Institute for Intelligent Systems</a> in Tübingen, Germany, under the supervision of <a href="http://cvlibs.net/" target="_blank">Andreas Geiger</a>.  -->
+                I am an assistant research scientist at the University of Michigan Ann Arbor, working with the <a href="http://websites.umich.edu/~compphys/" target="_blank">Computational Physics Group</a>.
+                I am a computational mechanist and develop scientific learning methods for applied mechanics problems. 
+                </p>
+                <p>
+                    <span style="font-weight: bold;">Education:</span> 
+                    I received my Ph.D. and MSE from the Dept. of Aerospace Engineering at the University of Michigan. 
+                    During my doctoral studies, I worked with <a href="http://www-personal.umich.edu/~veeras/" target="_blank">Prof. Veera Sundararaghavan</a> to identify problems in mehanics that can be solved using NISQ (Near-term Intermediate-scale Quantum) hardware.
+                    I have also received an MS degree in Mathematics at UM. 
+                    Later, I did my postdoctoral studies with <a href="http://websites.umich.edu/~compphys/" target="_blank">Prof. Krishna Garikipati</a> at UM in the area of Data-driven physics. 
+                    I did my undergraduate studies at Indian Institute of Technology Kanpur receiveing a B.Tech-M.Tech dual degree in Aerospace Engineering. 
+                    During that period, I worked with <a href="https://home.iitk.ac.in/~shekhar/" target="_blank">Prof. Chandra Shekhar Upadhyay</a> to develop constitutive models for rubber-like materials. 
                     <!-- In 2021 I joined <a href="https://research.google/teams/brain/">Google Brain</a> for an internship and subsequently as a student researcher. -->
                 </p>
                 <p>
-                    <span style="font-weight: bold;">Awards:</span>
-                    In 2011, I graduated as top of my year from secondary school and received <a href="https://www.e-fellows.net/" target="_blank">the e-fellows scholarship</a> and was admitted to <a href="https://www.mathematik.de/" target="_blank">the Germany Mathematics Society</a> and <a href="https://www.dpg-physik.de/" target="_blank">the German Physics Society</a>. In 2017 I received the Dean's List Award for Academic Excellence for my Master's degree.
-                    During my PhD studies, I was a scholar of <a href="https://imprs.is.mpg.de/" target="_blank">the International Max Planck Research School for Intelligent Systems (IMPRS-IS)</a>.
-                    Our two research projects Occupancy Networks and DVR were selected to be <a href="https://www.paperdigest.org/2021/03/most-influential-cvpr-papers-2021-03/" target="_blank">among the top-15 most influencial CVPR papers</a> from 2019 and 2020, respectively.
-                    In 2021, we received the CS teaching award for our <a href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/" target="_blank">computer vision lecture</a> as well as  <a href="https://cyber-valley.de/en/news/meet-the-ai-gamedev-winners" target="blank">the AIGameDev scientific award</a> for our GRAF project and <a href="https://cvpr2021.thecvf.com/node/329" target="_blank">the CVPR Best Paper Award</a> for GIRAFFE (<a href="https://cyber-valley.de/en/news/best-paper-cvpr-2021" target="_blank">news coverage</a>).
+                    <span style="font-weight: bold;">Research Statement:</span>
+                    My research focuses on extending, specializing, and developing novel ML/AI methods for computational mechanics rooted in classical physics and mathematical analysis. 
+                    These methods are referred as scientific learning methods for their relevance to scientific computing techniques. 
+                    Following attributes are desired from these methods: 
+                    <ul>
+                    <li> utilizing real-life experimental data, </li>
+                    <li> amenability to mathematical analysis, and </li>
+                    <li> transferability to new hardware systems appearing in the Post-Moore era.</li>                
+                    </ul>
+                
+                <p>
+                    <!-- <span style="font-weight: bold;">Current Projects:</span>-->
+                    <!-- In 20xx-->
                 </p>
                 <p>For any inquiries, feel free to reach out to me via mail!</p>
                 <p>
                     <a href="https://m-niemeyer.github.io/assets/pdf/CV_Niemeyer_Michael.pdf" target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
                     <a href="mailto:micniemeyer1@gmail.com" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
-                    <a href="https://twitter.com/Mi_Niemeyer" target="_blank" style="margin-right: 15px"><i class="fab fa-twitter fa-lg"></i> Twitter</a>
+                    <!--<a href="https://twitter.com/Mi_Niemeyer" target="_blank" style="margin-right: 15px"><i class="fab fa-twitter fa-lg"></i> Twitter</a>-->
                     <a href="https://scholar.google.com/citations?user=v1O7i_0AAAAJ&hl=en" target="_blank" style="margin-right: 15px"><i class="fa-solid fa-book"></i> Scholar</a>
                     <a href="https://github.com/m-niemeyer" target="_blank" style="margin-right: 15px"><i class="fab fa-github fa-lg"></i> Github</a>
                     <a href="https://www.linkedin.com/in/michael-niemeyer" target="_blank" style="margin-right: 15px"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
@@ -42,11 +48,11 @@ def get_personal_data():
     """
     footer = """
             <div class="col-sm-12" style="">
-                <h4>Homepage Template</h4>
+                <!--<h4>Homepage Template</h4>-->
                 <p>
-                    Feel free to use this website as a template! It is fully responsive and very easy to use and maintain as it uses a python script that crawls your bib files to automatically add the papers and talks. If you find it helpful, please add a link to my website - I will also add a link to yours (if you want). <a href="https://github.com/m-niemeyer/m-niemeyer.github.io" target="_blank">Checkout the github repository for instructions on how to use it</a>. <br>
-                    <a href="https://kashyap7x.github.io/" target="_blank">&#9883;</a>
-                    <a href="https://kait0.github.io/" target="_blank">&#9883;</a>
+                    <!--Feel free to use this website as a template! It is fully responsive and very easy to use and maintain as it uses a python script that crawls your bib files to automatically add the papers and talks. If you find it helpful, please add a link to my website - I will also add a link to yours (if you want). <a href="https://github.com/m-niemeyer/m-niemeyer.github.io" target="_blank">Checkout the github repository for instructions on how to use it</a>. <br>-->
+                    <!--<a href="https://kashyap7x.github.io/" target="_blank">&#9883;</a>-->
+                    <!--<a href="https://kait0.github.io/" target="_blank">&#9883;</a>-->
                 </p>
             </div>
     """
@@ -54,27 +60,13 @@ def get_personal_data():
 
 def get_author_dict():
     return {
-        'Andreas Geiger': 'https://www.cvlibs.net/',
-        'Songyou Peng': 'https://pengsongyou.github.io/',
-        'Zehao Yu': 'https://niujinshuchong.github.io/',
-        'Torsten Sattler': 'https://tsattler.github.io/',
-        'Katja Schwarz': 'https://katjaschwarz.github.io/',
-        'Axel Sauer': 'https://axelsauer.com/',
-        'Jonathan Barron': 'https://jonbarron.info/',
-        'Ben Mildenhall': 'https://bmild.github.io/',
-        'Mehdi Sajjadi': 'https://msajjadi.com/',
-        'Noha Radwan': 'http://www2.informatik.uni-freiburg.de/~radwann/',
-        'Chiyu Jiang': 'https://www.maxjiang.ml/',
-        'Yiyi Liao': 'https://yiyiliao.github.io/',
-        'Marc Pollefeys': 'https://people.inf.ethz.ch/pomarc/',
-        'Michael Oechsle': 'https://moechsle.github.io/',
-        'Christian Reiser': 'https://creiser.github.io/',
-        'Lars Mescheder': 'https://scholar.google.de/citations?user=h2k1gL4AAAAJ&hl=de',
-        'Thilo Strauss': 'https://scholar.google.com/citations?user=VlymtLQAAAAJ&hl=en',
-        'Sebastian Nowozin': 'http://www.nowozin.net/sebastian/',
+        'Veera Sundararaghavan': 'http://www-personal.umich.edu/~veeras/',
+        'Pinar Acar': 'https://sites.google.com/vt.edu/astrolab/',
+        'Krishna Garikipati': 'http://websites.umich.edu/~compphys/',
+        'Jonathan Estrada': 'https://esmech.engin.umich.edu',        
         }
 
-def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Michael Niemeyer', add_links=True):
+def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Siddhartha Srivastava', add_links=True):
     links = get_author_dict() if add_links else {}
     s = ""
     for p in persons:
@@ -207,7 +199,7 @@ def get_index_html():
         </div>
         <div class="row" style="margin-top: 3em;">
             <div class="col-sm-12" style="">
-                <h4>Talks</h4>
+                <h4>Selected Talks</h4>
                 {talks}
             </div>
         </div>
