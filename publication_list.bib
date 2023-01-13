@@ -1,59 +1,114 @@
 ---
 ---
-
-
-@STRING{CVPR = {Proc. IEEE Conf. on Computer Vision and Pattern	Recognition (CVPR)}}
-@STRING{ECCV = {Proc. of the European Conf. on Computer Vision (ECCV)}}
-@STRING{ICCV = {Proc. of the IEEE International Conf. on Computer Vision (ICCV)}}
-@STRING{THREEDV = {Proc. of the International Conf. on 3D Vision (3DV)}}
-@STRING{NEURIPS = {Advances in Neural Information Processing Systems (NeurIPS)}}
 @STRING{ARXIV = {arXiv.org}}
+@STRING{BIOARXIV = {biorxiv.org}}
+@STRING{APS = {American Physical Society}}
+@STRING{APL = {Applied Physics Letters}}
+@STRING{JFM = {Journal of Fracture Mechanics}}
+@STRING{CMS = {Computational Materials Science}}
+@STRING{CMAME = {Computer Methods in Applied Mechanics and Engineering}}
+@STRING{AIAA = {American Institute of Aeronautics and Astronautics}}
 
 
+@article{zhang2022mechanochemml,
+  title={mechanoChemML: A software library for machine learning in computational materials physics},
+  author={Xiaoxuan Zhang and Gregory Teichert and Zhenlin Wang and Matthew Duschenes and Siddhartha Srivastava and Elizabeth Livingston and Jamie Holber and Mostafa Shojaei and Arjun Sundararajan and Krishna Garikipati},
+  journal={Computational Materials Science},
+  volume={211},
+  pages={111493},
+  year={2022},
+  publisher={Elsevier},
+  html = {https://doi.org/10.1016/j.commatsci.2022.111493},
+  booktitle = CMS,
+  pdf = {},
+  code = {https://github.com/mechanoChem/mechanoChemML},  
+}
 
+@article{duschenes2022numerical,
+  title={Numerical analysis of non-local calculus on finite weighted graphs, with application to reduced-order modelling of dynamical systems},
+  author={Matthew Duschenes and Siddhartha Srivastava and Krishna Garikipati},
+  journal=CMAME,
+  year={2022},
+  publisher={Springer US},
+  html = {https://doi.org/10.1016/j.cma.2022.115513},
+  booktitle = CMAME,
+  pdf = {},
+  supp = {},
+  video = {},
+  poster = {},
+  code = {https://github.com/sidsriva/graph_calculus},  
+}
+
+@article{ho2022cell,
+  title={Cell-to-cell variability of dynamic CXCL12-CXCR4 signaling and morphological processes in chemotaxis},
+  author={Kenneth Ho and Siddhartha Srivastava and Patrick Kinnunen and Krishna Garikipati and Gary Luker and Kathryn Luker},
+  journal={bioRxiv},
+  year={2022},
+  publisher=BIOARXIV,
+  html = {https://www.biorxiv.org/content/10.1101/2022.05.19.492090v1},
+  booktitle = BIOARXIV,
+  pdf = {},
+  supp = {},
+}
+
+@article{nikolov2022ogden,
+  title={Ogden Material Calibration via Magnetic Resonance Cartography, Parameter Sensitivity, and Variational System Identification},
+  author={Denislav Nikolov and Siddhartha Srivastava and Bachir Abeid and Ulrich Scheven and Ellen Arruda and Krishna Garikipati and Jonathan Estrada},
+  journal={arXiv preprint arXiv:2204.03122},
+  year={2022},
+  publisher={The Royal Society Publishing},
+  html = {https://doi.org/10.1098/rsta.2021.0324},
+  booktitle = {Philisophical Transacations of the Royal Society A},
+  pdf = {},
+  supp = {},
+}
+
+@article{srivastava2022bandgap,
+  title={Bandgap optimization in combinatorial graphs with tailored ground states: application in quantum annealing},
+  author={Siddhartha Srivastava and Veera Sundararaghavan},
+  journal={Optimization and Engineering},
+  pages={1--19},
+  year={2022},
+  publisher={Springer US},
+  html = {https://link.springer.com/article/10.1007/s11081-022-09758-9},
+  booktitle = {Optimization and Engineering},
+  pdf = {},
+  code = {https://github.com/sidsriva/PEP},  
+}
+
+@phdthesis{srivastava2021graph,
+  title={Graph Theoretic Algorithms Adaptable to Quantum Computing},
+  author={Siddhartha Srivastava},
+  year={2021},
+  publisher={University of Michigan},
+  html = {https://dx.doi.org/10.7302/1543},
+  booktitle = {Doctoral Thesis},
+  pdf = {},
+}
 
 @article{BM,
-  title={Machine learning in quantum computers via general Boltzmann Machines: Generative and Discriminative training through annealing},
+  title={Generative and discriminative training of Boltzmann machine through Quantum annealing},
   author={Siddhartha Srivastava and Veera Sundararaghavan},
   journal={arXiv preprint arXiv:2002.00792},
   year={2020},
-  code = {https://github.com/sidsriva/GenDisBM},
-  img= {assets/img/publications/oflow.jpg},
-  html = {https://avg.is.mpg.de/publications/occupancy-networks},
-  booktitle = CVPR,
+  html = {https://arxiv.org/pdf/2002.00792.pdfs},
+  booktitle = ARXIV,
+  code = {https://github.com/sidsriva/GenDisBM}
 }
+
 
 @article{fracture,
   title={A graph-theoretic approach for multiscale modeling and prediction of crack propagation in polycrystalline materials},
   author={Siddhartha Srivastava and Mohammadreza Yaghoobi and Veera Sundararaghavan},
   journal={Engineering Fracture Mechanics},
+  volume={241}, 
   pages={107406},
-  year={2020},
-  publisher={Elsevier},
-  img= {assets/img/publications/oflow.jpg},
-  html = {https://avg.is.mpg.de/publications/occupancy-networks},
-  booktitle = CVPR,
-}
-
-@article{microfract,
-  title={MicroFract: An image based code for microstructural crack path prediction},
-  author={Veera Sundararaghavan and Siddhartha Srivastava},
-  journal={SoftwareX},
-  volume={6},
-  pages={94--97},
-  year={2017},
-  publisher={Elsevier},
-  url={ https://doi.org/10.1016/j.softx.2017.04.002},
-  img= {assets/img/publications/oflow.jpg},
-  html = {https://avg.is.mpg.de/publications/occupancy-networks},
-  booktitle = CVPR,
+  year={2021},
+  publisher={Pergamon},
+  html = {https://doi.org/10.1016/j.engfracmech.2020.107406},
+  booktitle = JFM,
   pdf = {},
-  supp = {},
-  video = {},
-  poster = {},
-  code = {},
 }
-
 
 @article{mesh,
   title={Graph Coloring Approach to Mesh Generation in Multiphase Media with Smooth Boundaries},
@@ -64,16 +119,23 @@
   pages={198--205},
   year={2020},
   publisher={American Institute of Aeronautics and Astronautics},
-  img= {assets/img/publications/oflow.jpg},
-  html = {https://avg.is.mpg.de/publications/occupancy-networks},
-  booktitle = CVPR,
+  html = {https://arc.aiaa.org/doi/10.2514/1.J058357},
+  booktitle = AIAA,
   pdf = {},
-  supp = {},
-  video = {},
-  poster = {},
-  code = {},
 }
 
+@article{acosta2019primary,
+  title={Primary and secondary pyroelectric effects in macro-fiber composites},
+  author={Krystal Acosta and Siddhartha Srivastava and William Wilkie and Daniel Inman},
+  journal={Composites Part B: Engineering},
+  volume={177},
+  pages={107275},
+  year={2019},
+  publisher={Elsevier},  
+  html = {https://doi.org/10.1016/j.compositesb.2019.107275},
+  booktitle = {Composites Part B: Engineering},
+  pdf = {},
+}
 
 @article{box,
   title={Box algorithm for the solution of differential equations on a quantum annealer},
@@ -83,36 +145,15 @@
   number={5},
   pages={052355},
   year={2019},
-  publisher={APS},
-  img= {assets/img/publications/oflow.jpg},
-  html = {https://avg.is.mpg.de/publications/occupancy-networks},
-  booktitle = CVPR,
+  publisher=APS,
+  html = {https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.052355},
+  booktitle = APS,
   pdf = {},
   supp = {},
   video = {},
   poster = {},
   code = {},
 }
-
-
-@article{uq,
-  title={Stochastic Design Optimization of Microstructures with Utilization of a Linear Solver},
-  author={Pinar Acar and Siddhartha Srivastava and Veera Sundararaghavan},
-  journal={AIAA Journal},
-  volume={55},
-  number={9},
-  pages={3161-3168},
-  year={2017},
-  img= {assets/img/publications/oflow.jpg},
-  html = {https://avg.is.mpg.de/publications/occupancy-networks},
-  booktitle = CVPR,
-  pdf = {},
-  supp = {},
-  video = {},
-  poster = {},
-  code = {},
-}
-
 
 @article{md,
   title={Thermal conductivity of pillared graphene-epoxy nanocomposites using molecular dynamics},
@@ -123,15 +164,46 @@
   pages={151902},
   year={2018},
   publisher={AIP Publishing},
-  img= {assets/img/publications/oflow.jpg},
-  html = {https://avg.is.mpg.de/publications/occupancy-networks},  
-  booktitle = CVPR,
+  html = {https://doi.org/10.1063/1.5022755},  
+  booktitle = APL,
   pdf = {},
-  supp = {},
-  video = {},
-  poster = {},
-  code = {},
+  supp = {https://aip.scitation.org/doi/suppl/10.1063/1.5022755/suppl_file/suppinfo_1521749221_1.pdf},
 }
 
-
+@article{microfract,
+  title={MicroFract: An image based code for microstructural crack path prediction},
+  author={Veera Sundararaghavan and Siddhartha Srivastava},
+  journal={SoftwareX},
+  volume={6},
+  pages={94--97},
+  year={2017},
+  publisher={Elsevier},
+  html={ https://doi.org/10.1016/j.softx.2017.04.002},
+  booktitle = {SoftwareX},
+  pdf = {},
+  code = {https://www.softxjournal.com/cms/10.1016/j.softx.2017.04.002/attachment/d7551178-a076-497a-862e-d179398161ed/mmc1.zip},
+}
   
+@article{uq,
+  title={Stochastic Design Optimization of Microstructures with Utilization of a Linear Solver},
+  author={Pinar Acar and Siddhartha Srivastava and Veera Sundararaghavan},
+  journal={AIAA Journal},
+  volume={55},
+  number={9},
+  pages={3161-3168},
+  year={2017},
+  html = {https://doi.org/10.2514/1.J056000},
+  booktitle = AIAA,
+  pdf = {}
+}
+
+@misc{srivastava2015constitutive,
+  title={Constitutive modelling of Rubber-like material},
+  author={Siddhartha Srivastava},
+  journal={Indian Institute of Technology Kanpur},
+  html = {https://www.researchgate.net/publication/362113015_Constitutive_modelling_of_Rubber-like_material},
+  year={2015},
+  publisher={Indian Institute of Technology Kanpur},
+  booktitle = {Masters thesis},
+  pdf = {}
+}

@@ -1,5 +1,27 @@
 from pybtex.database.input import bibtex
 
+
+def get_navbar_code():
+    navbar_code = f"""
+                <p>
+                <div class="navbar-brand">
+                <!--<p align="justify">-->
+                    <a class="active" href="index.html">Home</a>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <a href="research.html">Research</a>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <a href="publication.html">Publications</a>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <a href="talk.html">Talks</a>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <a href="musing.html">Musings</a>
+                <!--</p>-->
+                <br>
+                </div>
+                <p>
+                """
+    return navbar_code  
+
 def get_personal_data():
     name = ["Sid", "Srivastava"]
     email = "sidsriva@umich.edu"
@@ -8,42 +30,32 @@ def get_personal_data():
     linkedin = "michael-niemeyer"
     bio_text = f"""
                 <p>
-                I am an assistant research scientist at the University of Michigan Ann Arbor, working with the <a href="http://websites.umich.edu/~compphys/" target="_blank">Computational Physics Group</a>.
-                I am a computational mechanist and develop scientific learning methods for applied mechanics problems. 
+                Hi! My name is Siddhartha. I go by Sid. I am an assistant research scientist at the University of Michigan Ann Arbor, working with the <a href="http://websites.umich.edu/~compphys/" target="_blank">Computational Physics Group</a>.
+                I like developing scientific learning methods for applied mechanics problems. 
+                </p>
+                <p>
+                My research interests are Scientific learning methods, Computational mechanics, Biomechanics, Graph-theoretic algorithms, Post-Moore computation.
                 </p>
                 <p>
                     <span style="font-weight: bold;">Education:</span> 
                     I received my Ph.D. and MSE from the Dept. of Aerospace Engineering at the University of Michigan. 
-                    During my doctoral studies, I worked with <a href="http://www-personal.umich.edu/~veeras/" target="_blank">Prof. Veera Sundararaghavan</a> to identify problems in mehanics that can be solved using NISQ (Near-term Intermediate-scale Quantum) hardware.
+                    During my doctoral studies, I worked with <a href="http://www-personal.umich.edu/~veeras/" target="_blank">Prof. Veera Sundararaghavan</a> to identify problems in mechanics that can be solved using NISQ (Near-term Intermediate-scale Quantum) hardware.
                     I have also received an MS degree in Mathematics at UM. 
-                    Later, I did my postdoctoral studies with <a href="http://websites.umich.edu/~compphys/" target="_blank">Prof. Krishna Garikipati</a> at UM in the area of Data-driven physics. 
-                    I did my undergraduate studies at Indian Institute of Technology Kanpur receiveing a B.Tech-M.Tech dual degree in Aerospace Engineering. 
-                    During that period, I worked with <a href="https://home.iitk.ac.in/~shekhar/" target="_blank">Prof. Chandra Shekhar Upadhyay</a> to develop constitutive models for rubber-like materials. 
-                    <!-- In 2021 I joined <a href="https://research.google/teams/brain/">Google Brain</a> for an internship and subsequently as a student researcher. -->
+                    I did my postdoctoral studies with <a href="http://websites.umich.edu/~compphys/" target="_blank">Prof. Krishna Garikipati</a> at UM in the area of Data-driven physics. 
+                    I have also received a B.Tech-M.Tech dual degree in Aerospace Engineering at Indian Institute of Technology Kanpur. 
+                    During my undergraduate studies, I worked with <a href="https://home.iitk.ac.in/~shekhar/" target="_blank">Prof. Chandra Shekhar Upadhyay</a> to develop constitutive theories for highly deformable dissipative materials. 
                 </p>
-                <p>
-                    <span style="font-weight: bold;">Research Statement:</span>
-                    My research focuses on extending, specializing, and developing novel ML/AI methods for computational mechanics rooted in classical physics and mathematical analysis. 
-                    These methods are referred as scientific learning methods for their relevance to scientific computing techniques. 
-                    Following attributes are desired from these methods: 
-                    <ul>
-                    <li> utilizing real-life experimental data, </li>
-                    <li> amenability to mathematical analysis, and </li>
-                    <li> transferability to new hardware systems appearing in the Post-Moore era.</li>                
-                    </ul>
-                
-                <p>
                     <!-- <span style="font-weight: bold;">Current Projects:</span>-->
                     <!-- In 20xx-->
                 </p>
                 <p>For any inquiries, feel free to reach out to me via mail!</p>
                 <p>
-                    <a href="https://m-niemeyer.github.io/assets/pdf/CV_Niemeyer_Michael.pdf" target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
-                    <a href="mailto:micniemeyer1@gmail.com" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
+                    <a href="https://m-niemeyer.github.io/assets/pdf/CV.pdf" target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
+                    <a href="mailto:sidsriva@umich.edu" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
                     <!--<a href="https://twitter.com/Mi_Niemeyer" target="_blank" style="margin-right: 15px"><i class="fab fa-twitter fa-lg"></i> Twitter</a>-->
-                    <a href="https://scholar.google.com/citations?user=v1O7i_0AAAAJ&hl=en" target="_blank" style="margin-right: 15px"><i class="fa-solid fa-book"></i> Scholar</a>
-                    <a href="https://github.com/m-niemeyer" target="_blank" style="margin-right: 15px"><i class="fab fa-github fa-lg"></i> Github</a>
-                    <a href="https://www.linkedin.com/in/michael-niemeyer" target="_blank" style="margin-right: 15px"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=zLj-pQcAAAAJ" target="_blank" style="margin-right: 15px"><i class="fa-solid fa-book"></i> Scholar</a>
+                    <a href="https://github.com/sidsriva" target="_blank" style="margin-right: 15px"><i class="fab fa-github fa-lg"></i> Github</a>
+                    <a href="https://www.linkedin.com/in/sidsriva" target="_blank" style="margin-right: 15px"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
                 </p>
     """
     footer = """
@@ -63,7 +75,8 @@ def get_author_dict():
         'Veera Sundararaghavan': 'http://www-personal.umich.edu/~veeras/',
         'Pinar Acar': 'https://sites.google.com/vt.edu/astrolab/',
         'Krishna Garikipati': 'http://websites.umich.edu/~compphys/',
-        'Jonathan Estrada': 'https://esmech.engin.umich.edu',        
+        'Jonathan Estrada': 'https://esmech.engin.umich.edu',
+        'Elizabeth Livingston': 'https://lizliv.com'      
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Siddhartha Srivastava', add_links=True):
@@ -84,20 +97,28 @@ def generate_person_html(persons, connection=", ", make_bold=True, make_bold_nam
         s += string_part_i
     return s
 
-def get_paper_entry(entry_key, entry):
-    s = """<div style="margin-bottom: 3em;"> <div class="row"><div class="col-sm-3">"""
-    s += f"""<img src="{entry.fields['img']}" class="img-fluid img-thumbnail" alt="Project image">"""
-    s += """</div><div class="col-sm-9">"""
+def get_paper_entry(entry_key, entry, entry_metadata = []):
+    #s = """<div style="margin-bottom: 3em;"> <div class="row"><div class="col-sm-3">"""
+    #s += f"""<img src="{entry.fields['img']}" class="img-fluid img-thumbnail" alt="Project image">"""
+    #s += """</div><div class="col-sm-9">"""
+    s = """<div style="margin-bottom: 1em;"> <div class="row">"""
+    s += """<div class="col-sm-12">"""
+    #s += """&bull;"""
+
+    if 'preEntryText' in entry_metadata.keys():
+        s += entry_metadata['preEntryText']
 
     if 'award' in entry.fields.keys():
-        s += f"""<a href="{entry.fields['html']}" target="_blank">{entry.fields['title']}</a> <span style="color: red;">({entry.fields['award']})</span><br>"""
+        ###s += f"""<a href="{entry.fields['html']}" target="_blank">{entry.fields['title']}</a> <span style="color: red;">({entry.fields['award']})</span><br>"""
+        s += f"""<em>{entry.fields['title']}</em> <span style="color: red;">({entry.fields['award']})</span><br>"""
     else:
-        s += f"""<a href="{entry.fields['html']}" target="_blank">{entry.fields['title']}</a> <br>"""
+        ###s += f"""<a href="{entry.fields['html']}" target="_blank">{entry.fields['title']}</a> <br>"""
+        s += f"""<em>{entry.fields['title']}</em> <br>"""
 
     s += f"""{generate_person_html(entry.persons['author'])} <br>"""
     s += f"""<span style="font-style: italic;">{entry.fields['booktitle']}</span>, {entry.fields['year']} <br>"""
 
-    artefacts = {'html': 'Project Page', 'pdf': 'Paper', 'supp': 'Supplemental', 'video': 'Video', 'poster': 'Poster', 'code': 'Code'}
+    artefacts = {'html': 'Link', 'pdf': 'Paper', 'supp': 'Supplemental', 'video': 'Video', 'poster': 'Poster', 'code': 'Code'}
     i = 0
     for (k, v) in artefacts.items():
         if k in entry.fields.keys():
@@ -141,9 +162,17 @@ def get_publications_html():
     parser = bibtex.Parser()
     bib_data = parser.parse_file('publication_list.bib')
     keys = bib_data.entries.keys()
-    s = ""
+    s = "<ol>"
+    counter = 0
+    entry_metadata = {}
     for k in keys:
-        s+= get_paper_entry(k, bib_data.entries[k])
+        counter +=1
+        entry_data = bib_data.entries[k]
+        entry_metadata['preEntryText'] = ""#f"""[{counter}] """
+        s+="<li>"
+        s+= get_paper_entry(k, entry_data, entry_metadata)
+        s+="</li>"
+    s+="</ol>"
     return s
 
 def get_talks_html():
@@ -156,9 +185,12 @@ def get_talks_html():
     return s
 
 def get_index_html():
-    pub = get_publications_html()
-    talks = get_talks_html()
+    #pub = get_publications_html()
+    #talks = get_talks_html()
+    pub=0
+    talks=0
     name, bio_text, footer = get_personal_data()
+    navbar_code = get_navbar_code()
     s = f"""
     <!doctype html>
 <html lang="en">
@@ -167,7 +199,6 @@ def get_index_html():
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -184,6 +215,10 @@ def get_index_html():
             <h3 class="display-4" style="text-align: center;"><span style="font-weight: bold;">{name[0]}</span> {name[1]}</h3>
             </div>
             <br>
+            <div class="col-md-12" style="">
+                {navbar_code}
+            </div>    
+            <br>
             <div class="col-md-8" style="">
                 {bio_text}
             </div>
@@ -191,18 +226,259 @@ def get_index_html():
                 <img src="assets/img/profile.jpg" class="img-thumbnail" width="280px" alt="Profile picture">
             </div>
         </div>
-        <div class="row" style="margin-top: 1em;">
+        <!--<div class="row" style="margin-top: 1em;">-->
+        <!--    <div class="col-sm-12" style="">-->
+        <!--        <h4>Publications</h4>-->
+        <!--        {pub}-->
+        <!--    </div>-->
+        <!-- </div>-->        
+        <!-- <div class="row" style="margin-top: 3em;">-->
+        <!--     <div class="col-sm-12" style="">-->
+        <!--         <h4>Selected Talks</h4>-->
+        <!--         {talks}-->
+        <!--     </div>-->
+        <!-- </div>-->
+        <div class="row" style="margin-top: 3em; margin-bottom: 1em;">
+            {footer}
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
+    """
+    return s
+
+def get_publication_html():
+    pub = get_publications_html()
+    name, _, footer = get_personal_data()
+    navbar_code = get_navbar_code()
+    s = f"""
+    <!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>{name[0] + ' ' + name[1]}</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 3em;">
+            <div class="col-sm-12" style="margin-bottom: 1em;">
+            <h3 class="display-4" style="text-align: center;"><span style="font-weight: bold;">{name[0]}</span> {name[1]}</h3>
+            </div>
+            <br>
+            <div class="col-md-12" style="">
+                {navbar_code}
+            </div>
+            <!--<div class="row" style="margin-top: 1em;">-->
             <div class="col-sm-12" style="">
-                <h4>Publications</h4>
+                <!--<h4>Publications</h4>-->
                 {pub}
             </div>
+            <!--</div>-->
+        <div class="row" style="margin-top: 3em; margin-bottom: 1em;">
+            {footer}
         </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
+    """
+    return s
+
+def get_talk_html():
+    talks = get_talks_html()
+    navbar_code = get_navbar_code()
+    name, _, footer = get_personal_data()
+    s = f"""
+    <!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>{name[0] + ' ' + name[1]}</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
         <div class="row" style="margin-top: 3em;">
+            <div class="col-sm-12" style="margin-bottom: 1em;">
+            <h3 class="display-4" style="text-align: center;"><span style="font-weight: bold;">{name[0]}</span> {name[1]}</h3>
+            </div>
+            <br>
+            <div class="col-md-12" style="">
+                {navbar_code}
+            </div>
+            <!--<div class="row" style="margin-top: 1em;">-->
             <div class="col-sm-12" style="">
-                <h4>Selected Talks</h4>
+                <!--<h4>Publications</h4>-->
                 {talks}
             </div>
+            <!--</div>-->
+        <div class="row" style="margin-top: 3em; margin-bottom: 1em;">
+            {footer}
         </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
+    """
+    return s
+
+
+def get_research_html():
+    talks = get_talks_html()
+    navbar_code = get_navbar_code()
+    name, _, footer = get_personal_data()
+    with open('research_writeup.dat', 'r') as file:
+        research_info = file.read()    
+    s = f"""
+    <!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>{name[0] + ' ' + name[1]}</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 3em;">
+            <div class="col-sm-12" style="margin-bottom: 1em;">
+            <h3 class="display-4" style="text-align: center;"><span style="font-weight: bold;">{name[0]}</span> {name[1]}</h3>
+            </div>
+            <br>
+            <div class="col-md-12" style="">
+                {navbar_code}
+            </div>
+            <!--<div class="row" style="margin-top: 1em;">-->
+            <div class="col-sm-12" style="">
+                <!--<h4>Publications</h4>-->
+                {research_info}
+            </div>
+            <!--</div>-->
+        <div class="row" style="margin-top: 3em; margin-bottom: 1em;">
+            {footer}
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
+    """
+    return s
+
+
+def get_musing_html():
+    navbar_code = get_navbar_code()
+    name, _, footer = get_personal_data()
+    with open('musing_writeup.dat', 'r') as file:
+        musing_info = file.read()
+    s = f"""
+    <!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>{name[0] + ' ' + name[1]}</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 3em;">
+            <div class="col-sm-12" style="margin-bottom: 1em;">
+            <h3 class="display-4" style="text-align: center;"><span style="font-weight: bold;">{name[0]}</span> {name[1]}</h3>
+            </div>
+            <br>
+            <div class="col-md-12" style="">
+                {navbar_code}
+            </div>
+            <!--<div class="row" style="margin-top: 1em;">-->
+            <div class="col-sm-12" style="">
+                <!--<h4>Publications</h4>-->
+                {musing_info}
+            </div>
+            <!--</div>-->
         <div class="row" style="margin-top: 3em; margin-bottom: 1em;">
             {footer}
         </div>
@@ -232,5 +508,33 @@ def write_index_html(filename='index.html'):
         f.write(s)
     print(f'Written index content to {filename}.')
 
+def write_research_html(filename='research.html'):
+    s = get_research_html()
+    with open(filename, 'w') as f:
+        f.write(s)
+    print(f'Written research content to {filename}.')    
+
+def write_publication_html(filename='publication.html'):
+    s = get_publication_html()
+    with open(filename, 'w') as f:
+        f.write(s)
+    print(f'Written publication content to {filename}.')    
+
+def write_talk_html(filename='talk.html'):
+    s = get_talk_html()
+    with open(filename, 'w') as f:
+        f.write(s)
+    print(f'Written talks content to {filename}.')    
+
+def write_musing_html(filename='musing.html'):
+    s = get_musing_html()
+    with open(filename, 'w') as f:
+        f.write(s)
+    print(f'Written musing content to {filename}.')    
+
 if __name__ == '__main__':
     write_index_html('index.html')
+    write_research_html()    
+    write_publication_html() 
+    write_talk_html()
+    write_musing_html()        
