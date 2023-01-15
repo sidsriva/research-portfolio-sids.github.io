@@ -24,10 +24,6 @@ def get_navbar_code():
 
 def get_personal_data():
     name = ["Sid", "Srivastava"]
-    email = "sidsriva@umich.edu"
-    twitter = "Mi_Niemeyer"
-    github = "m-niemeyer"
-    linkedin = "michael-niemeyer"
     bio_text = f"""
                 <p>
                 Hi! My name is Siddhartha. I go by Sid. I am an assistant research scientist at the University of Michigan Ann Arbor, working with the <a href="http://websites.umich.edu/~compphys/" target="_blank">Computational Physics Group</a>.
@@ -50,12 +46,13 @@ def get_personal_data():
                 </p>
                 <p>For any inquiries, feel free to reach out to me via mail!</p>
                 <p>
-                    <a href="https://m-niemeyer.github.io/assets/pdf/CV.pdf" target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
+                    <a href="assets/pdf/CV.pdf" target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
                     <a href="mailto:sidsriva@umich.edu" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
                     <!--<a href="https://twitter.com/Mi_Niemeyer" target="_blank" style="margin-right: 15px"><i class="fab fa-twitter fa-lg"></i> Twitter</a>-->
                     <a href="https://scholar.google.com/citations?hl=en&user=zLj-pQcAAAAJ" target="_blank" style="margin-right: 15px"><i class="fa-solid fa-book"></i> Scholar</a>
                     <a href="https://github.com/sidsriva" target="_blank" style="margin-right: 15px"><i class="fab fa-github fa-lg"></i> Github</a>
                     <a href="https://www.linkedin.com/in/sidsriva" target="_blank" style="margin-right: 15px"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
+                    <a href="https://orcid.org/0000-0002-4684-4423" target="_blank" style="margin-right: 15px"><i class="fab fa-orcid fa-lg"></i> ORCiD</a>
                 </p>
     """
     footer = """
