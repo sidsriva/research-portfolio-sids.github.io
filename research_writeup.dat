@@ -8,5 +8,60 @@
     </ul>
 </p>
 <p>
-<span style="font-weight: bold;">Research Statement:</span>
+<span style="font-weight: bold;">Discovery of physical mechanisms leading to informed experimental design</span>
 </p>
+<p>
+Perhaps, one of the most touted challenges in computational physics in the past decade has been – ‘Infer the governing physics of the system from experimental data’, leading to the development of methods like manifold learning, SINDy, VSI, and many more. 
+Most physical systems admit to a partial differential equations (PDE) model. 
+The discovery of physical mechanisms, thus, involves finding the simplest PDE that explains the experimental data. 
+I have been developing techniques on the intersection of finite element methods and data-driven optimization methods. 
+These techniques, being based on the weak form of PDE, allow for minimal regularity constraint on the data as well as give a natural way of prescribing the boundary conditions necessary for emulating the experimental conditions. 
+I have applied these techniques to infer the constitutive theories for soft matter and continuum-scale transport mechanisms for cancer cells. 
+These works have identified some critical open challenges in the field:
+<ul><em>
+<li>How can we design experiments that facilitate robust inference?</li>
+<li>Can the inference at the continuum-scale inform inference technique for discrete physics?</li>
+</ul></em>
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<img src="assets/img/research/brain.png" alt="Adiabatic Computation" class="img" width="80%" height="auto">
+
+</p>
+
+<p>
+<span style="font-weight: bold;">Graph-theoretic representations for surrogate modeling of physical systems</span>
+</p>
+<p>
+A Neural network is a central element in most ML architectures like Deep Neural Networks, Autoencoders, GANS, etc., where it serves as a mathematical parameterization for any quantity of interest, much like the popular finite element or spectral basis interpolations. 
+The power of Universal Approximation theorems and advancements in training methodologies have catapulted it into computational physics, leading to the development of new methods like Physics inspired Neural Networks (PINNs), Deep Operator Networks (DeepONet), and Kernel networks. 
+However, designing ML methods for scientific computing requires treating unstructured data that may stem from constraints around data acquisition methods in the experimental setup. 
+Additionally, the quantity of interest often involves the evaluation of differential operators. We have introduced Graph Calculus Neural Network that allows for differential interpolations for unstructured data and shown its relevance in modeling differential equations and free energies of physical systems. 
+This method is based on one of our previous works where we analyzed <em>hp</em> convergence (in graph calculus) as is required in scientific computing settings. 
+Graph Calculus Neural Network typically requires fewer trainable parameters than classical Neural Networks, making them amenable to mathematical analysis. 
+We are using this framework as a basis for the following expositions: 
+<ul><em>
+    <li> Developing novel ML PDE solvers for fast solution of PDEs. </li>
+    <li> Developing surrogates for free energies of physical systems that are relevant for reduced order modeling in many mechanochemical systems.</li>  
+</ul></em>
+
+
+<p>
+<span style="font-weight: bold;">Scientific Learning in Post-Moore era</span>
+</p>
+<p>
+The reliance on the periodic doubling of the computational power has been waning as we approach the limits of the transistor size and energy requirements, mobilizing researchers towards developing specialized hardware, e.g., D Wave's Quantum annealer for combinatorial optimization, IBMQ and IonQ for Quantum Computing, and Neuromorphic devices for Machine Learning. 
+One of the areas in computational modeling that have shown affinity to such hardware is the mechanics of multiphase media. 
+The multiphase system is a general term encompassing materials like porous solids, polycrystalline materials, mixed-phase alloys, etc. 
+A characteristic feature of these materials is that their physics is governed by the interplay of the surface and bulk energies of different phases. 
+These systems are typically studied with phase field methods where there is a well-known problem of the curse of dimensionality with an increasing number of phases. 
+The more intuitive approach of studying these phases in discrete space (in comparison to continuous fields) has seen limited exploration due to the lack of surface representation techniques in these discrete settings. 
+My doctoral thesis borrowed ideas from Graph theory and differential geometry to develop representations for these multiphase systems in this discrete setting, allowing these problems to be solved using combinatorial optimization methods like <em>Graph-cut</em> and Adiabatic computation hardwares like <em>D Wave Quantum annealer</em>. 
+We have successfully applied these methods to fracture mechanics, mesh generation, PDEs, bandgap optimization in spinodal systems and machine learning. 
+Some of the open problems in this area that are of immediate interest to me:
+<ul><em>
+    <li> Characterizing surface and bulk energies from experimental images of thermally induced grain growth in polycrystalline materials. </li>
+    <li> Training physics-based Machine learning models for fracture path prediction.</li>  
+</ul></em>
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<img src="assets/img/research/adiabatic_direction.png" alt="Adiabatic Computation" class="img" width="80%" height="auto">

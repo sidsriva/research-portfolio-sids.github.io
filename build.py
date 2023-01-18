@@ -7,14 +7,14 @@ def get_navbar_code():
                 <div class="navbar-brand">
                 <!--<p align="justify">-->
                     <a class="active" href="index.html">Home</a>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                     <a href="research.html">Research</a>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                     <a href="publication.html">Publications</a>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                     <a href="talk.html">Talks</a>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <a href="musing.html">Musings</a>
+                    <!--&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-->
+                    <!--<a href="musing.html">Musings</a>-->
                 <!--</p>-->
                 <br>
                 </div>
@@ -30,16 +30,16 @@ def get_personal_data():
                 I like developing scientific learning methods for applied mechanics problems. 
                 </p>
                 <p>
-                My research interests are Scientific learning methods, Computational mechanics, Biomechanics, Graph-theoretic algorithms, Post-Moore computation.
+                    <span style="font-weight: bold;">Research interests:</span> 
+                    Scientific learning methods, Computational mechanics, Biomechanics, Graph-theoretic algorithms, Post-Moore computation.
                 </p>
                 <p>
                     <span style="font-weight: bold;">Education:</span> 
-                    I received my Ph.D. and MSE from the Dept. of Aerospace Engineering at the University of Michigan. 
+                    I did my postdoctoral studies with <a href="http://websites.umich.edu/~compphys/" target="_blank">Prof. Krishna Garikipati</a> at UM in the area of Data-driven physics.                    
+                    I received a Ph.D. in Aerospace Engineering and MS in Mathematics at the University of Michigan Ann Arbor. 
                     During my doctoral studies, I worked with <a href="http://www-personal.umich.edu/~veeras/" target="_blank">Prof. Veera Sundararaghavan</a> to identify problems in mechanics that can be solved using NISQ (Near-term Intermediate-scale Quantum) hardware.
-                    I have also received an MS degree in Mathematics at UM. 
-                    I did my postdoctoral studies with <a href="http://websites.umich.edu/~compphys/" target="_blank">Prof. Krishna Garikipati</a> at UM in the area of Data-driven physics. 
-                    I have also received a B.Tech-M.Tech dual degree in Aerospace Engineering at Indian Institute of Technology Kanpur. 
-                    During my undergraduate studies, I worked with <a href="https://home.iitk.ac.in/~shekhar/" target="_blank">Prof. Chandra Shekhar Upadhyay</a> to develop constitutive theories for highly deformable dissipative materials. 
+                    I also received a B.Tech-M.Tech dual degree in Aerospace Engineering at the Indian Institute of Technology Kanpur. 
+                    During my undergraduate studies, I worked with <a href="https://home.iitk.ac.in/~shekhar/" target="_blank">Prof. Chandra Shekhar Upadhyay</a> to develop constitutive theories for highly deformable and dissipative materials. 
                 </p>
                     <!-- <span style="font-weight: bold;">Current Projects:</span>-->
                     <!-- In 20xx-->
