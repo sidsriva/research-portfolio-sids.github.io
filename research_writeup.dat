@@ -8,6 +8,9 @@
     </ul>
 </p>
 <p>
+I have been developing methods for following specific areas in computational science: 
+</p>
+<p>
 <span style="font-weight: bold;">Discovery of physical mechanisms leading to informed experimental design</span>
 </p>
 <p>
@@ -43,6 +46,8 @@ We are using this framework as a basis for the following expositions:
     <li> Developing novel ML PDE solvers for fast solution of PDEs. </li>
     <li> Developing surrogates for free energies of physical systems that are relevant for reduced order modeling in many mechanochemical systems.</li>  
 </ul></em>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<img src="assets/img/research/graph_calc.png" alt="Graph Calculus" class="img" width="70%" height="auto">
 
 
 <p>
@@ -62,6 +67,5 @@ Some of the open problems in this area that are of immediate interest to me:
     <li> Characterizing surface and bulk energies from experimental images of thermally induced grain growth in polycrystalline materials. </li>
     <li> Training physics-based Machine learning models for fracture path prediction.</li>  
 </ul></em>
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-<img src="assets/img/research/adiabatic_direction.png" alt="Adiabatic Computation" class="img" width="80%" height="auto">
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<img src="assets/img/research/adiabatic_direction.png" alt="Adiabatic Computation" class="img" width="70%" height="auto">
