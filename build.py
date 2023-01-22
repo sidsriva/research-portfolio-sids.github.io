@@ -5,14 +5,11 @@ def get_navbar_code():
     navbar_code = f"""
                 <p>
                 <div class="navbar-brand">
-                <!--<p align="justify">-->
-                    <a class="active" href="index.html">Home</a>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <a href="research.html">Research</a>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <a href="publication.html">Publications</a>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                    <a href="talk.html">Talks</a>
+                <p align="justify">
+                    | &emsp;<a class="active" href="index.html">Home</a> &emsp;
+                    | &emsp;<a href="research.html">Research</a> &emsp;
+                    | &emsp;<a href="publication.html">Publications</a> &emsp;
+                    | &emsp;<a href="talk.html">Talks</a> &emsp;| 
                     <!--&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-->
                     <!--<a href="musing.html">Musings</a>-->
                 <!--</p>-->
