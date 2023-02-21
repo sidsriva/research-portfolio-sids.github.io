@@ -9,7 +9,8 @@ def get_navbar_code():
                     | &emsp;<a class="active" href="index.html">Home</a> &emsp;
                     | &emsp;<a href="research.html">Research</a> &emsp;
                     | &emsp;<a href="publication.html">Publications</a> &emsp;
-                    | &emsp;<a href="talk.html">Talks</a> &emsp;| 
+                    | &emsp;<a href="talk.html">Talks</a> &emsp;
+                    | &emsp;<a href="resource.html">Resources</a> &emsp;| 
                     <!--&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-->
                     <!--<a href="musing.html">Musings</a>-->
                 <!--</p>-->
@@ -70,7 +71,10 @@ def get_author_dict():
         'Pinar Acar': 'https://sites.google.com/vt.edu/astrolab/',
         'Krishna Garikipati': 'http://websites.umich.edu/~compphys/',
         'Jonathan Estrada': 'https://esmech.engin.umich.edu',
-        'Elizabeth Livingston': 'https://lizliv.com'      
+        'Elizabeth Livingston': 'https://lizliv.com',
+        'Gary Luker': 'https://luker.lab.medicine.umich.edu',
+        'Kathy Luker': 'https://luker.lab.medicine.umich.edu',
+        'Jennifer Linderman': 'https://cheresearch.engin.umich.edu/linderman/',      
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Siddhartha Srivastava', add_links=True):
@@ -377,7 +381,7 @@ def get_research_html():
     talks = get_talks_html()
     navbar_code = get_navbar_code()
     name, _, footer = get_personal_data()
-    with open('research_writeup.dat', 'r') as file:
+    with open('writeup_research.dat', 'r') as file:
         research_info = file.read()    
     s = f"""
     <!doctype html>
@@ -434,11 +438,71 @@ def get_research_html():
     """
     return s
 
+def get_resource_html():
+    navbar_code = get_navbar_code()
+    name, _, footer = get_personal_data()
+    with open('writeup_resource.dat', 'r') as file:
+        resource_info = file.read()
+    s = f"""
+    <!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>{name[0] + ' ' + name[1]}</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 3em;">
+            <div class="col-sm-12" style="margin-bottom: 1em;">
+            <h3 class="display-4" style="text-align: center;"><span style="font-weight: bold;">{name[0]}</span> {name[1]}</h3>
+            </div>
+            <br>
+            <div class="col-md-12" style="">
+                {navbar_code}
+            </div>
+            <!--<div class="row" style="margin-top: 1em;">-->
+            <div class="col-sm-12" style="">
+                <!--<h4>Publications</h4>-->
+                {resource_info}
+            </div>
+            <!--</div>-->
+        <div class="row" style="margin-top: 3em; margin-bottom: 1em;">
+            {footer}
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
+    """
+    return s
+
 
 def get_musing_html():
     navbar_code = get_navbar_code()
     name, _, footer = get_personal_data()
-    with open('musing_writeup.dat', 'r') as file:
+    with open('writeup_musing.dat', 'r') as file:
         musing_info = file.read()
     s = f"""
     <!doctype html>
@@ -496,39 +560,22 @@ def get_musing_html():
     return s
 
 
-def write_index_html(filename='index.html'):
-    s = get_index_html()
-    with open(filename, 'w') as f:
-        f.write(s)
-    print(f'Written index content to {filename}.')
 
-def write_research_html(filename='research.html'):
-    s = get_research_html()
-    with open(filename, 'w') as f:
-        f.write(s)
-    print(f'Written research content to {filename}.')    
-
-def write_publication_html(filename='publication.html'):
-    s = get_publication_html()
-    with open(filename, 'w') as f:
-        f.write(s)
-    print(f'Written publication content to {filename}.')    
-
-def write_talk_html(filename='talk.html'):
-    s = get_talk_html()
-    with open(filename, 'w') as f:
-        f.write(s)
-    print(f'Written talks content to {filename}.')    
-
-def write_musing_html(filename='musing.html'):
-    s = get_musing_html()
-    with open(filename, 'w') as f:
-        f.write(s)
-    print(f'Written musing content to {filename}.')    
+def write_htmlfiles():
+    files_dict = {
+        'index':{'file':'index.html','func':get_index_html()},
+        'research':{'file':'research.html','func':get_research_html()},
+        'publication':{'file':'publication.html','func':get_publication_html()},
+        'talk':{'file':'talk.html','func':get_talk_html()},
+        'resource':{'file':'resource.html','func':get_resource_html()},
+        'musing':{'file':'musing.html','func':get_musing_html()}
+        }
+    for key in files_dict.keys():    
+        s = files_dict[key]['func']
+        with open(files_dict[key]['file'], 'w') as f:
+            f.write(s)
+        print(f'Written {key} content.')    
 
 if __name__ == '__main__':
-    write_index_html('index.html')
-    write_research_html()    
-    write_publication_html() 
-    write_talk_html()
-    write_musing_html()        
+    write_htmlfiles()
+   
