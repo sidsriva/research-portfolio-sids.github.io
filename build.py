@@ -73,8 +73,10 @@ def get_author_dict():
         'Jonathan Estrada': 'https://esmech.engin.umich.edu',
         'Elizabeth Livingston': 'https://lizliv.com',
         'Gary Luker': 'https://luker.lab.medicine.umich.edu',
-        'Kathy Luker': 'https://luker.lab.medicine.umich.edu',
-        'Jennifer Linderman': 'https://cheresearch.engin.umich.edu/linderman/',      
+        'Kathryn Luker': 'https://luker.lab.medicine.umich.edu',
+        'Jennifer Linderman': 'https://cheresearch.engin.umich.edu/linderman/',
+        'Daniel Inman': 'http://www.aimslabumich.com/', 
+        'Zhenlin Wang': 'https://sites.google.com/view/wzhenlin/'     
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Siddhartha Srivastava', add_links=True):
